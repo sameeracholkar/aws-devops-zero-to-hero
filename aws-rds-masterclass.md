@@ -4,7 +4,11 @@
 ### Begin Configuration :
 ```bash
 sudo su -
+#if this doesnt work, go to 2.
 yum -y install mariadb-server wget
+#2
+yum list mariadb*
+sudo yum install mariadb105-server.x86_64
 systemctl enable mariadb
 systemctl start mariadb
 yum -y update
